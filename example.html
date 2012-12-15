@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown example</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://raw.github.com/toonevdb/jquery-countdown/master/jquery.countdown.js"></script>
+<script>
+$(function() {
+	$('#countdown').countdown({
+		min: 1,
+		sec: 30,
+		finish: function() {
+			alert('Countdown passed!');
+		}
+	});
+});
+</script>
+<style type="text/css">
+.countdown-container {
+	display: inline-block;;
+	position: relative;
+	background: #333;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+.countdown-digits {
+	display: inline-block;
+	margin: 0.2em;
+	padding: 0.3em;
+	background: #000;
+	border-radius: 5px;
+	color: #fff;
+}
+.countdown-divider {
+	display: inline-block;
+	color: #fff;
+}
+</style>
+<body>
+
+</body>
+<h1>Countdown demo</h1>
+<p>This is a very simple jquery countdown plugin. See below.</p>
+<div id="countdown"></div>
+<p>You will see an alert when the countdown passes.</p>
+</html>
